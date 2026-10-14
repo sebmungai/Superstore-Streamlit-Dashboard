@@ -8,7 +8,7 @@ st.title('Superstore Sales Eplore')
 #load and Prepare the data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('SuperStore.csv', encoding='latin1')
+    df = pd.read_csv('Superstore.csv', encoding='latin1')
 
     df['Order Date'] = pd.to_datetime(df['Order Date'], errors= 'coerce')
 
